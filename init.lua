@@ -17,8 +17,5 @@ vim.opt.rtp:prepend(lazypath)
 --require("diagnostics")
 require("vim-options")
 require("lazy").setup("plugins")
-
-vim.api.nvim_buf_set_lines(0, 0, -1, false, {"hello"})
-
-
+require("ibl").setup()
 
